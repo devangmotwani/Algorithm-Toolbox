@@ -1,11 +1,16 @@
 # Uses python3
-def calc_fib(n):
+def fast_fib(n):
+    if n<=1:
+        return n
     f_num=[]
     f_num.append(int(0))
     f_num.append(int(1))
-    for i in range(2:):
-        f_num.append(int(f_num[i-1]+f_num[i-2]))
-    return f_num[n-1]
+    for i in range(2,n+1):
+        temp= int(f_num[-1]+f_num[-2])
+        f_num.append(int(temp))
+    #for i in f_num:
+    #    print (i,)
+    return f_num[-1]
 
 n = int(input())
-print(calc_fib(n))
+print(str(fast_fib(n)))
