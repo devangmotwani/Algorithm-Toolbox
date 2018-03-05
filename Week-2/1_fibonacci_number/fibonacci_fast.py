@@ -9,7 +9,7 @@ def fast_fib(n):
         temp= int(f_num[-1]+f_num[-2])
         f_num.append(int(temp))
     #for i in f_num:
-    #    print (i,)
+    #    print (i)
     return f_num[-1]
 
 n = int(input())
