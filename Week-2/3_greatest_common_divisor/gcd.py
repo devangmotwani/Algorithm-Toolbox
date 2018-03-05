@@ -11,6 +11,6 @@ def gcd_naive(a, b):
     return current_gcd
 
 if __name__ == "__main__":
-    input = sys.stdin.read()
-    a, b = map(int, input.split())
+    input_cmd = input()#sys.stdin.read()
+    a, b = map(int, input_cmd.split())
     print(gcd_naive(a, b))
